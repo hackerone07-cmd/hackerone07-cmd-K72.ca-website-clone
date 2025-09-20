@@ -52,7 +52,7 @@ const FullScreenNav = () => {
             <div></div>
           </div>
         </div>
-        <div className="py-20">
+        <div className="py-22">
           <div className="link  border-t-1  relative border-white">
             <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
               Projects
