@@ -13,14 +13,14 @@ const App = () => {
   return (
     <div className="">
        
-   {/* <Navbar/> */}
+   <Navbar/>
   <FullScreenNav/>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agens />} />
 
         <Route path="/projects" element={<Projects />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 };
