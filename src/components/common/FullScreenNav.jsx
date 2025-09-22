@@ -1,35 +1,45 @@
 import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import NavContext from "../../context/navContext";
 const FullScreenNav = () => {
-  const stairParentRef = useRef(null);
+  const fullscreenlinknav = useRef(null);
+cosnt NavContext=   useContext(NavContext);
 
   useGSAP(function () {
     const tl = gsap.timeline();
 
-    tl.from(".stair", {
+    tl.from(".stairing", {
       height: 0,
       stagger: {
         amount: -0.26,
       },
     });
+    tl.from(fullscreenlinknav.current,{
+       opacity: 0,
+    });
+    tl.from(".link",{
+      opacity:0, 
+      rotateX: 90, 
+      stagger: {
+        amount: 0.26,
+      },
+    })
   });
 
   return (
     <div
-      id="fullScreenNav"
-      className="h-screen text-white  overflow-x-hidden w-full absolute bg-black"
-    >
-      <div ref={stairParentRef} className="h-screen w-full fixed">
+      id="fullScreenNav" className="h-screen text-white  overflow-hidden w-full absolute bg-black" >
+      <div className="h-screen w-full fixed">
         <div className="h-full w-full flex">
-          <div className="stair h-full w-1/5 bg-black"> </div>
-          <div className="stair h-full w-1/5 bg-black"> </div>
-          <div className="stair h-full w-1/5 bg-black"> </div>
-          <div className="stair h-full w-1/5 bg-black"> </div>
-          <div className="stair h-full w-1/5 bg-black"> </div>
+          <div className="stairing h-full w-1/5 bg-red-500"> </div>
+          <div className="stairing h-full w-1/5 bg-red-500"> </div>
+          <div className="stairing h-full w-1/5 bg-red-500"> </div>
+          <div className="stairing h-full w-1/5 bg-red-500"> </div>
+          <div className="stairing h-full w-1/5 bg-red-500"> </div>
         </div>
       </div>
-      <div className="relative">
+      <div ref={fullscreenlinknav} className="relative">
         <div className="flex w-full justify-between p-2 items-start">
           <div className="">
             <div className=" w-30">
@@ -52,8 +62,8 @@ const FullScreenNav = () => {
             <div></div>
           </div>
         </div>
-        <div className="py-22">
-          <div className="link  border-t-1  relative border-white">
+        <div className="py-18">
+          <div className="link origin-top  border-t-1  relative border-white">
             <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
               Projects
             </h1>
@@ -96,7 +106,7 @@ const FullScreenNav = () => {
               </div>
             </div>
           </div>
-          <div className="link  border-t-1  relative border-white">
+          <div className="link origin-top  border-t-1  relative border-white">
             <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
               Projects
             </h1>
@@ -139,7 +149,7 @@ const FullScreenNav = () => {
               </div>
             </div>
           </div>
-          <div className="link  border-t-1  relative border-white">
+          <div className="link origin-top  border-t-1  relative border-white">
             <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
               Projects
             </h1>
@@ -182,7 +192,7 @@ const FullScreenNav = () => {
               </div>
             </div>
           </div>
-          <div className="link  border-y-1  relative border-white">
+          <div className="link origin-top  border-y-1  relative border-white">
             <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
               Projects
             </h1>
