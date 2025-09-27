@@ -69,9 +69,9 @@ const Agens = () => {
           <div className="pl-[38%] ">
             <p className="text-6xl ">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notre
-              curiosité nourrit notre créativité. On reste humbles <br /> et on
+              curiosité nourrit notre créativité. On reste humbles <br/> et on
               dit non aux gros egos, même
-              <br /> le vôtre. Une marque est vivante. Elle a des valeurs,
+              <br/> le vôtre. Une marque est vivante. Elle a des valeurs,
               unpersonnalité,
               <br /> une histoire. Si on oublie ça, on peut faire de bons
               chiffres à court terme, mais on la tue à long terme. C’est pour ça
