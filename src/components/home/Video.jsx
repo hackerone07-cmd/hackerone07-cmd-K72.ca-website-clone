@@ -8,7 +8,7 @@ const Video = () => {
    <video
      style={{ borderRadius: "1rem" }}
   
-  className="h-full w-full object-cover"
+  className="h-screen w-full object-cover"
   autoPlay
   loop
   muted

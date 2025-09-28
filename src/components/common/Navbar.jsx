@@ -2,16 +2,13 @@ import React, { useContext, useRef } from "react";
 import { NavbarContext } from "../../context/navContext";
 
 const Navbar = () => {
-
   const navRef = useRef(null);
-  const [navOpen,setnavOpen] =useContext(NavbarContext)
-
-
+  const [navOpen, setnavOpen] = useContext(NavbarContext);
 
   return (
     <div className="z-4 flex fixed top-0 w-full items-start justify-between">
-      <div className="p-2">
-        <div className=" w-30">
+      <div className="lg:p-2 p-1">
+        <div className="lg:w-36 w-16 ">
           <svg
             className="w-full"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,18 +22,25 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-      <div onClick={()=>{
-        setnavOpen(true)
-      }} onMouseEnter={()=>{
-        navRef.current.style.height = '100%' 
-      }} onMouseLeave={()=>{
-         navRef.current.style.height = '0%' 
-      }}     className="h-13 bg-black relative w-[15vw]">
-       
-        <div ref={navRef} className="bg-[#D3FD50] transition-all top-0  h-0 w-full absolute"></div>
+      <div
+        onClick={() => {
+          setnavOpen(true);
+        }}
+        onMouseEnter={() => {
+          navRef.current.style.height = "100%";
+        }}
+        onMouseLeave={() => {
+          navRef.current.style.height = "0%";
+        }}
+        className="lg:h-13 h-10 transition-all bg-black relative lg:w-[15vw] w-36"
+      >
+        <div
+          ref={navRef}
+          className="bg-[#D3FD50] transition-all top-0  h-0 w-full absolute"
+        ></div>
         <div className="relative flex flex-col gap-1 right-0 justify-center items-end h-full px-6">
-          <div className="w-14 h-0.5 opacity-55 bg-white"></div>
-          <div className="w-8 h-0.5 opacity-55 bg-white"></div>
+          <div className="lg:w-14 w-10 h-0.5 opacity-55 bg-white"></div>
+          <div className="lg:w-8  w-6 h-0.5 opacity-55 bg-white"></div>
         </div>
       </div>
     </div>
