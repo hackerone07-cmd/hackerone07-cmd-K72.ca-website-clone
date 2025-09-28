@@ -28,7 +28,7 @@ function gsapAnimation(){
         amount: 0.3,
       },
     });
-    tl.to('.navlink',{
+    tl.to('.navLink',{
     opacity:1
     })
   
@@ -49,13 +49,13 @@ function gsapAnimationReverse(){
     stagger: { amount: 0.2 },
   });
 
-  tl.to('.navlink', {
+  tl.to('.navLink', {
     opacity: 0
   });
 
   tl.to('.fullScreenNav', {
     display: 'none'
-  }, "+=0.1"); // delay to allow previous animations to finish
+  },); // delay to allow previous animations to finish
 
   
 }
@@ -80,7 +80,7 @@ function gsapAnimationReverse(){
         </div>
       </div>
       <div ref={fullscreenlinknav} className="relative">
-        <div className="navlink flex w-full justify-between p-2 items-start">
+        <div className="navLink flex w-full justify-between p-2 items-start">
           <div className="">
             <div className=" w-30 ">
               <svg
@@ -98,185 +98,83 @@ function gsapAnimationReverse(){
           </div>
           <div onClick={()=>{
             setnavOpen(false)
-          }} className="cursor-pointer relative h-24 w-24">
-            <div className="h-34 w-0.5 -rotate-45 origin-top absolute bg-white "></div>
-            <div className="h-34 w-0.5 right-0 rotate-45 origin-top absolute bg-white "></div>
+          }} className="cursor-pointer relative lg:h-24 h-18 lg:w-24 w-18">
+            <div className="lg:h-34 h-24 lg:w-1 w-1  -rotate-45 origin-top absolute bg-white "></div>
+            <div className="lg:h-34 h-24 lg:w-1 w-1 right-0 rotate-45 origin-top absolute bg-white "></div>
             <div></div>
           </div>
         </div>
-        <div className="py-18">
+        <div className="lg:py-18 py-30">
           <div className="link origin-top  border-t-1  relative border-white">
-            <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-              Projects
-            </h1>
+            <h1 className="font-[font2] text-4xl lg:text-[7vw] text-center uppercase leading-16 lg:leading-[0.8] pt-1 lg:pt-3 "> Projects</h1>
             <div className="moveLink absolute top-0 bg-[#D3FD50] text-black flex">
-              <div className=" moveX flex  moveX  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+              <div className=" moveX flex  items-center">
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 ">Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
               </div>
               <div className=" moveX flex  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir </h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full" src="" alt="" />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img  className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"src="" alt=""/>
               </div>
             </div>
-          </div>
+         </div>
           <div className="link origin-top  border-t-1  relative border-white">
-            <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-              Projects
-            </h1>
+            <h1 className="font-[font2] text-4xl lg:text-[7vw] text-center uppercase leading-16 lg:leading-[0.8] pt-1 lg:pt-3 "> Projects</h1>
             <div className="moveLink absolute top-0 bg-[#D3FD50] text-black flex">
               <div className=" moveX flex  moveX  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 ">Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
               </div>
               <div className=" moveX flex  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir </h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full" src="" alt="" />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img  className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"src="" alt=""/>
               </div>
             </div>
-          </div>
+         </div>
           <div className="link origin-top  border-t-1  relative border-white">
-            <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-              Projects
-            </h1>
+            <h1 className="font-[font2] text-4xl lg:text-[7vw] text-center uppercase leading-16 lg:leading-[0.8] pt-1 lg:pt-3 "> Projects</h1>
             <div className="moveLink absolute top-0 bg-[#D3FD50] text-black flex">
               <div className=" moveX flex  moveX  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 ">Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
               </div>
               <div className=" moveX flex  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir </h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full" src="" alt="" />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img  className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"src="" alt=""/>
               </div>
             </div>
-          </div>
+         </div>
           <div className="link origin-top  border-y-1  relative border-white">
-            <h1 className="font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-              Projects
-            </h1>
+            <h1 className="font-[font2] text-4xl lg:text-[7vw] text-center uppercase leading-16 lg:leading-[0.8] pt-1 lg:pt-3 "> Projects</h1>
             <div className="moveLink absolute top-0 bg-[#D3FD50] text-black flex">
               <div className=" moveX flex  moveX  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 ">Pour Tout voir</h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"/>
               </div>
               <div className=" moveX flex  items-center">
-                <h2 className="whitespace-nowrap  font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
-                <h2 className="whitespace-nowrap  font-[font2]  text-[7vw] text-center uppercase leading-[0.8] pt-3 ">
-                  Pour Tout voir
-                </h2>
-                <img
-                  className="h-20 w-52 bg-red-600 rounded-full"
-                  src=""
-                  alt=""
-                />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir </h2>
+                <img className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full" src="" alt="" />
+                <h2 className="whitespace-nowrap  font-[font2] lg:text-[7vw] text-4xl text-center uppercase lg:leading-[0.8] pt-1 lg:pt-3 "> Pour Tout voir</h2>
+                <img  className="lg:h-20 h-16 shrink-0 lg:w-52 w-46 bg-red-600 rounded-full"src="" alt=""/>
               </div>
             </div>
-          </div>
+         </div>
+         
+        
         </div>
       </div>
     </div>
